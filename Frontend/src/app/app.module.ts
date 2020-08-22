@@ -16,8 +16,7 @@ import { APP_ROUTES } from './app-routing.module';
 *
 * PagesModule: En este modulo se encuentra todo en relación con la aplicación a realizar
 * UsuarioModule: Aquí se encuentra todos los componentes y servicios que tienen relación directa solo con el usuario.
-* PanelModule: En ese modulo se encuentra todo lo relacionado a control de usuarios y permisos, asi como registros de tablas de entes
-  y areas.
+* PanelModule: En ese modulo se encuentra todo lo relacionado a control de usuarios y permisos.
 */
 
 import { UsuarioModule } from './usuario/usuario.module';
@@ -26,7 +25,7 @@ import { PanelModule } from './panel/panel.module';
 
 
 /**
-* Modulo de servicio, aquí se almacenan todos los servicios inyectables compartidos dentro de la aplicación de la agenda.
+* Modulo de servicio
 */
 import { ServicesModule } from './services/services.module';
 
