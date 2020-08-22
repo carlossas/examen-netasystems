@@ -15,7 +15,7 @@ POSTMAN
 
 Backend:
 En la cmd tipear "npm install" para instalar las dependencias de node.
-Correr el comando "npm run serve" para compiar el proyecto y levantar el servidor de node
+Correr el comando "npm run serve" para compilar el proyecto y levantar el servidor de node
 
 API:
 Las rutas de la api estan publicadas en POSTMAN: https://documenter.getpostman.com/view/4248636/T1LV8ijv?version=latest
