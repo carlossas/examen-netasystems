@@ -1,3 +1,7 @@
+Postulante: Carlos Adrian García Reyes
+Contacto: carloss_dev@hotmail.com
+Teléfono: 9931366047
+
 Herramientas usadas para el examen (necesarias para el despligue):
 
 NodeJS (última versión)
