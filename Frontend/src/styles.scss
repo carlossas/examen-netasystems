@@ -1,0 +1,232 @@
+/* You can add global styles to this file, and also import other style files */
+
+// <!-- FUENTES GOOGLE Y MATERIAL ICONS -->
+@import '~material-design-icons/iconfont/material-icons.css';
+.center {
+    text-align: center !important;
+    align-content: center;
+    display: block !important;
+    margin: auto !important;
+}
+
+.fit-content {
+    width: fit-content;
+}
+
+.low {
+    animation-duration: 2s;
+}
+
+.speed {
+    animation-duration: 0.6s;
+}
+
+.ws-normal {
+    white-space: normal;
+}
+
+.t-break {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.material-icons {
+    display: inline-flex;
+    vertical-align: middle;
+}
+
+.icons-container {
+    display: flex;
+    justify-content: center;
+}
+
+//PALETA DE COLORES
+.bg-smoke {
+    background-color: #EFEFEF !important;
+}
+
+.bg-gray {
+    background-color: #f5f5f5 !important;
+}
+
+.bg-hard-gray {
+    background-color: #7d8791 !important;
+}
+
+.bg-ligth-gray {
+    background-color: #d2dbe4 !important;
+}
+
+.bg-black {
+    background-color: #363D4A !important;
+}
+
+.bg-wine {
+    background-color: #A01F41 !important;
+}
+
+.bg-splash {
+    background-color: #1976d2;
+}
+
+.text-wine {
+    color: #A01F41 !important;
+}
+
+.text-black {
+    color: #363D4A !important;
+}
+
+.text-yellow {
+    color: rgb(241, 218, 15) !important;
+}
+
+.bg-yellow {
+    background-color: rgb(228, 206, 15) !important;
+}
+
+.imgcenter {
+    margin: auto !important;
+    display: block !important;
+}
+
+.none-padding {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+.pointer {
+    cursor: pointer !important;
+}
+
+.smoke {
+    background-color: #fafafa;
+}
+
+.text-smoke {
+    color: #EFEFEF !important;
+}
+
+.text-aqua {
+    color: #6da7dd !important;
+}
+
+.form-control {
+    background-image: linear-gradient(0deg, #a01f41 2px, rgba(213, 0, 0, 0) 0), linear-gradient(0deg, rgba(0, 0, 0, .26) 1px, transparent 0) !important;
+}
+
+.is-focused [class*=" bmd-label"],
+.is-focused [class^=bmd-label] {
+    color: #a01f41 !important;
+}
+
+.checkbox label input[type=checkbox]:checked+.checkbox-decorator .check,
+label.checkbox-inline input[type=checkbox]:checked+.checkbox-decorator .check {
+    color: #a01f41 !important;
+    border-color: #a01f41 !important;
+}
+
+.checkbox label input[type=checkbox]:checked+.checkbox-decorator .check:before,
+label.checkbox-inline input[type=checkbox]:checked+.checkbox-decorator .check:before {
+    color: #a01f41 !important;
+}
+
+.disabled {
+    color: #dddddd !important;
+    cursor: not-allowed !important;
+    transition: unset !important;
+}
+
+.disabled:hover {
+    transform: unset !important;
+    color: #dddddd !important;
+}
+
+.btn-unset {}
+
+.fileover .containersAnimated {
+    animation: pulse 0.8s;
+    animation-iteration-count: infinite;
+}
+
+
+/* ////////////////////////////////////////////////////BREAKPOINTS//////////////////////////////////////////////////// */
+
+
+/* VISTA MOVIL VERTICAL*/
+
+@media screen and (min-width: 0px) and (max-width: 599px) {
+    .d-sm-none {
+        display: none !important;
+    }
+}
+
+
+/* FIN VISTA MOVIL VERTICAL*/
+
+
+/* VISTA MOVIL HORIZONTAL*/
+
+@media screen and (min-width: 600px) and (max-width: 760px) {}
+
+
+/* FIN VISTA MOVIL HORIZONTAL*/
+
+
+/* VISTA IPAD/TABLET VERTICAL*/
+
+@media screen and (min-width: 761px) and (max-width: 999px) {}
+
+
+/* FIN VISTA IPAD/TABLET VERTICAL*/
+
+
+/* VISTA IPAD/TABLETS HORIZONTAL */
+
+@media screen and (min-width: 1000px) and (max-width: 1250px) {}
+
+
+/* FIN VISTA IPAD/TABLETS HORIZONTAL */
+
+// ---------------------------------------------------- Estilos del Sweet Alert ----------------------------------------------------
+
+/*
+Cambiar la orientación de los botones, que estén en mayusculas y sus colores
+Rojo: #A01F41 
+Gris: #363D4A 
+*/
+
+.swal-footer {
+    text-align: center;
+    .swal-button-container {
+        button {
+            text-transform: uppercase;
+        }
+    }
+    .swal-button-container:nth-child(even) {
+        button {
+            background: #363D4A;
+        }
+    }
+    .swal-button-container:nth-child(odd) {
+        button {
+            background: #A01F41;
+            color: white !important;
+        }
+    }
+}
+
+.swal-button:focus {
+    box-shadow: unset !important;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}

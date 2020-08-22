@@ -1,0 +1,11 @@
+<main class="contenedor-main" id="contenedor-main">
+    <app-header></app-header>
+    <router-outlet></router-outlet>
+</main>
+
+<!-- ALERTA /// SE CONTROLA CON UN SERVICIO -->
+<div *ngIf="utilidadesS.mostrarAlerta">
+    <div [ngClass]="{'fadeOutDown': utilidadesS.animacionAlerta}" [ngStyle]="utilidadesS.alertaStyle" class="animated fadeInUp alert text-center alert-main" role="alert">
+        {{ utilidadesS.textoAlerta }}
+    </div>
+</div>

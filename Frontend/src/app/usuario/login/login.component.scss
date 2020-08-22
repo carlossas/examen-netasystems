@@ -1,0 +1,62 @@
+.main-container {
+    height: fit-content;
+    min-height: 100%;
+}
+
+.card {
+    width: 35rem;
+}
+
+footer {
+    position: fixed;
+    bottom: 1rem;
+}
+
+
+/* ////////////////////////////////////////////////////BREAKPOINTS//////////////////////////////////////////////////// */
+
+
+/* VISTA MOVIL VERTICAL*/
+
+@media screen and (min-width: 0px) and (max-width: 599px) {
+    .card {
+        width: 20rem;
+    }
+    footer {
+        bottom: 0rem;
+    }
+}
+
+
+/* FIN VISTA MOVIL VERTICAL*/
+
+
+/* VISTA MOVIL HORIZONTAL*/
+
+@media screen and (min-width: 600px) and (max-width: 760px) {
+    .card {
+        width: 30rem;
+    }
+    footer {
+        display: none;
+    }
+}
+
+
+/* FIN VISTA MOVIL HORIZONTAL*/
+
+
+/* VISTA IPAD/TABLET VERTICAL*/
+
+@media screen and (min-width: 761px) and (max-width: 999px) {}
+
+
+/* FIN VISTA IPAD/TABLET VERTICAL*/
+
+
+/* VISTA IPAD/TABLETS HORIZONTAL */
+
+@media screen and (min-width: 1000px) and (max-width: 1250px) {}
+
+
+/* FIN VISTA IPAD/TABLETS HORIZONTAL */

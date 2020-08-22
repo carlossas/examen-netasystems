@@ -1,0 +1,16 @@
+<div class="h-100vh fadeIn bg-wine py-5">
+    <div class="text-center">
+        <h6 class="text-strong-wine t-404 font-weight-bold">404</h6>
+        <h6 class="text-strong-wine t-sorry font-weight-normal">
+            {{ 'no.page' | translate }}
+        </h6>
+    </div>
+    <div class="text-center">
+    </div>
+</div>
+
+<div class="position-fixed b-0 w-100">
+    <button [routerLink]="['/']" class="btn d-block m-auto text-white font-weight-bold">
+        {{ 'menu.regresar' | translate }}
+    </button>
+</div>

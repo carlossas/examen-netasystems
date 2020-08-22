@@ -1,0 +1,80 @@
+nav {
+    z-index: 9;
+}
+
+.avatar-img {
+    width: 100%;
+    max-width: 1.85rem;
+}
+
+.container-header {
+    box-shadow: 0 3px 2px -2px gray;
+}
+
+.form-control {
+    background-image: linear-gradient(0deg, #a01f41 2px, rgba(255, 255, 255, 0) 0) !important;
+}
+
+.contenedor-opcion-usuario {
+    position: absolute;
+    right: 40%;
+    margin-top: 0.75rem;
+    width: max-content;
+    min-height: 10rem;
+}
+
+.text-option-user {
+    font-size: 0.85rem;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+
+/* ////////////////////////////////////////////////////BREAKPOINTS//////////////////////////////////////////////////// */
+
+
+/* VISTA MOVIL VERTICAL*/
+
+@media screen and (min-width: 0px) and (max-width: 599px) {
+    .contenedor-opcion-usuario {
+        right: 0%;
+    }
+    .text-option-user {
+        font-size: 0.7rem;
+        text-align: left;
+    }
+    .text-option-user .material-icons {
+        font-size: 1.1rem;
+    }
+}
+
+
+/* FIN VISTA MOVIL VERTICAL*/
+
+
+/* VISTA MOVIL HORIZONTAL*/
+
+@media screen and (min-width: 600px) and (max-width: 760px) {
+    .contenedor-opcion-usuario {
+        right: 0%;
+    }
+}
+
+
+/* FIN VISTA MOVIL HORIZONTAL*/
+
+
+/* VISTA IPAD/TABLET VERTICAL*/
+
+@media screen and (min-width: 761px) and (max-width: 999px) {}
+
+
+/* FIN VISTA IPAD/TABLET VERTICAL*/
+
+
+/* VISTA IPAD/TABLETS HORIZONTAL */
+
+@media screen and (min-width: 1000px) and (max-width: 1250px) {}
+
+
+/* FIN VISTA IPAD/TABLETS HORIZONTAL */

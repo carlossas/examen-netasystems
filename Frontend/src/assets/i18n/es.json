@@ -1,0 +1,40 @@
+{
+    "login.inicio": "Iniciar Sesión",
+    "login.usuario": "Usuario",
+    "login.contrasena": "Contraseña",
+    "login.ingresar": "Ingresar",
+    "login.autor": "Autor",
+    "inicio.bienvenido": "Bienvenido",
+    "inicio.sinPermisos": "Usted no cuenta con permisos para gestionar usuarios.",
+    "inicio.inicie_usuarioAdmin": "Ingrese con un usuario administrador para acceder a la gestión de usuarios.",
+    "inicio.permisosOn": "Usted cuenta con permisos para gestionar usuarios.",
+    "inicio.ingresarPanel": "Ingresar al panel de control",
+    "inicio.datosUsuario": "Datos del usuario",
+    "inicio.puesto": "Puesto en la empresa",
+    "inicio.telefono": "Teléfono",
+    "inicio.correo": "Correo",
+    "inicio.idioma": "Idioma",
+    "inicio.superusuario": "SuperUsuario",
+    "menu.panel": "Panel de control",
+    "menu.regresar": "Regresar al inicio",
+    "menu.registro": "REGISTRO Y CONTROL DE USUARIOS",
+    "menu.listar": "Listar usuarios",
+    "menu.registrar": "Registrar nuevos usuarios",
+    "menu.editar": "Editar usuarios",
+    "menu.eliminar": "Eliminar usuarios",
+    "usuarios.control": "Control de usuarios",
+    "usuarios.crear": "Crear usuario",
+    "usuarios.editar": "Editar usuario",
+    "usuarios.contrasena": "Contraseña",
+    "usuarios.idioma": "Idioma de preferencia",
+    "usuarios.guardar": "Guardar",
+    "usuarios.cancelar": "Cancelar",
+    "usuarios.nombre": "Nombre completo",
+    "cerrar.sesion": "Cerrar Sesión",
+    "no.page": "Página no encontrada"
+
+
+
+
+
+}

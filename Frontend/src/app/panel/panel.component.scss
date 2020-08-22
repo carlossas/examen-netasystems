@@ -1,0 +1,70 @@
+main {}
+
+/////////////////////////////////////////////////*ALERTA DE EVENTOS*/ /////////////////////////////////////////////////*
+.alert-main {
+    position: fixed;
+    bottom: 0;
+    z-index: 985;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30rem;
+    left: 0%;
+    text-align: center;
+    right: 0;
+    z-index: 9;
+}
+
+
+/* ////////////////////////////////////////////////////BREAKPOINTS//////////////////////////////////////////////////// */
+
+
+/* VISTA MOVIL VERTICAL*/
+
+@media screen and (min-width: 0px) and (max-width: 600px) {
+    .alert-main {
+        width: 55% !important;
+        font-size: 10px;
+        left: 0% !important;
+        right: 0% !important;
+    }
+    main {
+        margin: 0;
+        margin-bottom: 3rem;
+    }
+}
+
+
+/* FIN VISTA MOVIL VERTICAL*/
+
+
+/* VISTA MOVIL HORIZONTAL*/
+
+@media screen and (min-width: 601px) and (max-width: 767px) {
+    .alert-main {
+        left: 0% !important;
+        right: 0% !important;
+    }
+    main {
+        margin: 0;
+        margin-bottom: 3rem;
+    }
+}
+
+
+/* FIN VISTA MOVIL HORIZONTAL*/
+
+
+/* VISTA IPAD/TABLET VERTICAL*/
+
+@media screen and (min-width: 768px) and (max-width: 999px) {}
+
+
+/* FIN VISTA IPAD/TABLET VERTICAL*/
+
+
+/* VISTA IPAD/TABLETS HORIZONTAL */
+
+@media screen and (min-width: 1000px) and (max-width: 3500px) {}
+
+
+/* FIN VISTA IPAD/TABLETS HORIZONTAL */

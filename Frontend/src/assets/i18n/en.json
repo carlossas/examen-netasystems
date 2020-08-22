@@ -1,0 +1,52 @@
+{
+    "login.inicio": "Login",
+    "usuario": "User",
+    "contrasena": "Password",
+    "login.ingresar": "Login",
+    "login.autor": "Author",
+    "inicio.bienvenido": "Welcome",
+    "inicio.sinPermisos": "You do not have permissions to manage users.",
+    "inicio.inicie_usuarioAdmin": "Login with an administrator user to access user management.",
+    "inicio.permisosOn": "You have permissions to manage users.",
+    "inicio.ingresarPanel": "Enter the control panel",
+    "inicio.datosUsuario": "User information",
+    "inicio.puesto": "Position in the company",
+    "inicio.telefono": "Telephone",
+    "inicio.correo": "Email",
+    "inicio.idioma": "Language",
+    "inicio.superusuario": "SuperUser",
+    "menu.panel": "Control Panel",
+    "menu.regresar": "Back",
+    "menu.registro": "REGISTRATION AND CONTROL OF USERS",
+    "menu.listar": "List users",
+    "menu.registrar": "Register new users",
+    "menu.editar": "Update users",
+    "menu.eliminar": "Delete users",
+    "usuarios.control": "User control",
+    "usuarios.crear": "New user",
+    "usuarios.editar": "Update user",
+    "usuarios.contrasena": "Password",
+    "usuarios.idioma": "Preferred language",
+    "usuarios.guardar": "Guardar",
+    "usuarios.cancelar": "Cancelar",
+    "usuarios.nombre": "Name",
+    "cerrar.sesion": "Sign off",
+    "no.page": "Page not found"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

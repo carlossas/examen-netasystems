@@ -1,0 +1,35 @@
+<div class="container-fluid animated fadeIn">
+
+    <div class="jumbotron bg-dark row py-0">
+        <div class="container">
+            <h4 class="text-center py-4 text-white">
+                <span class="material-icons">settings</span> {{ 'menu.panel' | translate }}
+
+            </h4>
+        </div>
+    </div>
+
+    <button [routerLink]="['/inicio']" type="button" class="btn btn-success btn-raised p-3 m-auto d-block">
+        {{ 'menu.regresar' | translate }}
+    </button>
+
+    <div class="card-deck pt-5">
+
+        <div [routerLink]="['/panel/usuarios']" class="card text-white bg-dark mb-3">
+            <div class="card-body">
+                <h5 class="card-title">
+                    <span class="material-icons">business</span> {{ 'menu.registro' | translate }}
+                </h5>
+                <hr>
+                <p class="card-text text-justify">
+                    - {{ 'menu.listar' | translate }}
+                    <br><br> - {{ 'menu.registrar' | translate }}
+                    <br><br> - {{ 'menu.editar' | translate }}
+                    <br><br> - {{ 'menu.eliminar' | translate }}
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+</div>

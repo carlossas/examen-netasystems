@@ -1,0 +1,163 @@
+<div class="container-fluid">
+    <div class="pt-4">
+
+        <button [routerLink]="['/inicio']" type="button" class="btn btn-success btn-raised p-3 m-auto d-block">
+            {{ 'menu.regresar' | translate }}
+        </button>
+
+
+        <h4 class="text-center pb-1 pt-4 text-secondary">
+            {{ 'usuarios.control' | translate }}
+        </h4>
+
+        <button (click)="setUser();" data-toggle="modal" data-target="#userForm" type="button" class="btn btn-outline-success center">
+            <span class="material-icons">add_circle_outline</span>{{ 'usuarios.crear' | translate }} 
+        </button>
+
+
+        <button data-toggle="modal" data-target="#userForm" id="abrirModalUser" class="d-none"></button>
+
+        <br>
+
+
+        <!-- VISUALIZADOR DE USUARIOS -->
+        <div class="row justify-content-center py-3">
+            <div *ngFor="let usuario of usuariosS.usuarios; let i = index;" class="col-12 col-sm-12 col-md-6 col-lg-4 align-self-center my-2">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">{{usuario.name}}</h5>
+                        <hr>
+                        <p class="card-text">
+                            {{ 'login.usuario' | translate }}: {{usuario.user}}
+                        </p>
+                        <p class="card-text">
+                            {{ 'inicio.correo' | translate }}: {{usuario.email}}
+                        </p>
+                        <p class="card-text">
+                            {{ 'inicio.telefono' | translate }}: {{usuario.telephone}}
+                        </p>
+                        <p class="card-text">
+                            {{ 'inicio.idioma' | translate }}: {{usuario.language}}
+                        </p>
+                        <p class="card-text">
+                            {{ 'inicio.puesto' | translate }}: {{usuario.position}}
+                        </p>
+                        <p class="card-text">
+                            {{ 'inicio.superusuario' | translate }}:
+                            <label *ngIf="usuario.admin == 1">Si</label>
+                            <label *ngIf="usuario.admin == 0">No</label>
+                        </p>
+                        <hr>
+                        <button (click)="asignarUsuario(usuario);" type="button" class="btn bmd-btn-icon mr-2">
+                            <i class="material-icons text-secondary">edit</i>
+                        </button>
+                        <button (click)="eliminarUsuario(usuario, i)" type="button" class="btn bmd-btn-icon">
+                            <i class="material-icons text-wine">delete</i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+</div>
+
+<!-- CREAR USUARIO -->
+<!-- Modal -->
+<div data-backdrop="static" class="modal fade" id="userForm" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 *ngIf="!editar" class="modal-title">{{ 'usuarios.crear' | translate }}</h5>
+                <h5 *ngIf="editar" class="modal-title">{{ 'usuarios.editar' | translate }}</h5>
+
+                <button (click)="setUser()" id="cerrarModal" type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <form ngForm #form="ngForm" ngNativeValidate>
+                <div class="modal-body">
+                    <!-- FORMULARIO -->
+
+                    <!-- NOMBRE -->
+                    <div class="form-group">
+                        <label>{{ 'usuarios.nombre' | translate }}</label>
+                        <input name="name" [(ngModel)]="form_usuario.name" required type="text" class="form-control" autocomplete="off">
+                    </div>
+
+                    <!-- NOMBRE DE USUARIO -->
+                    <div class="form-group">
+                        <label>{{ 'login.usuario' | translate }}</label>
+                        <input name="user" [(ngModel)]="form_usuario.user" required type="text" class="form-control" autocomplete="off">
+                    </div>
+
+                    <!-- CONTRASEÑA -->
+
+                    <div *ngIf="editar" class="form-check">
+                        <input name="camibarPass" [(ngModel)]="camibarPass" type="checkbox" class="form-check-input">
+                        <label class="form-check-label" for="exampleCheck1">Camibar contraseña</label>
+                    </div>
+
+                    <div *ngIf="!editar || camibarPass" class="form-group">
+                        <label>{{ 'usuarios.contrasena' | translate }}</label>
+                        <input name="password" [(ngModel)]="form_usuario.password" required type="password" class="form-control">
+                    </div>
+
+                    <!-- PUESTO -->
+                    <div class="form-group">
+                        <label> {{ 'inicio.puesto' | translate }}</label>
+                        <input name="position" [(ngModel)]="form_usuario.position" required type="text" class="form-control" autocomplete="off">
+                    </div>
+
+
+                    <!-- CORREO -->
+                    <div class="form-group">
+                        <label>{{ 'inicio.correo' | translate }}</label>
+                        <input name="email" [(ngModel)]="form_usuario.email" required type="text" class="form-control" autocomplete="off">
+                    </div>
+
+                    <!-- TELEFONO -->
+                    <div class="form-group">
+                        <label>{{ 'inicio.telefono' | translate }}</label>
+                        <input name="telephone" [(ngModel)]="form_usuario.telephone" required type="number" class="form-control" autocomplete="off">
+                    </div>
+
+
+                    <!-- IDIOMA -->
+                    <div class="form-group">
+                        <label>{{ 'usuarios.idioma' | translate }}</label>
+                        <select name="language" [(ngModel)]="form_usuario.language" required class="form-control">
+                            <option value="es">ESPAÑOL</option>
+                            <option value="en">ENGLISH</option>
+                        </select>
+                    </div>
+
+                    <!-- ADMIN -->
+                    <div class="form-check">
+                        <input name="admin" [(ngModel)]="form_usuario.admin" type="checkbox" class="form-check-input">
+                        <label class="form-check-label" for="exampleCheck1"> {{ 'inicio.superusuario' | translate }}</label>
+                    </div>
+
+
+
+                    <!-- FIN DEL FORMULARIO -->
+                </div>
+                <div class="modal-footer">
+                    <button (click)="setUser()" type="button" class="btn btn-secondary" data-dismiss="modal">
+                        {{ 'usuarios.cancelar' | translate }}
+                    </button>
+                    <button *ngIf="!editar" (click)="crearUsuario(form)" [disabled]="!form.valid" type="button" class="btn btn-success">
+                        {{ 'usuarios.guardar' | translate }}
+                    </button>
+                    <button *ngIf="editar" (click)="editarUsuario()" [disabled]="!form.valid" type="button" class="btn btn-success">
+                        {{ 'usuarios.editar' | translate }}
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,21 @@
+.card-deck {
+    justify-content: center;
+}
+
+.card {
+    text-align: center;
+    cursor: pointer;
+    max-width: 22rem;
+    min-height: 14rem;
+    transition-property: all;
+    transition-duration: 0.25s;
+    transition-timing-function: linear;
+}
+
+.card-text {
+    font-size: 1rem;
+}
+
+.card:hover {
+    transform: scale(1.055);
+}
