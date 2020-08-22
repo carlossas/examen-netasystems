@@ -1,4 +1,4 @@
-Herramientas usadas para el examen:
+Herramientas usadas para el examen (necesarias para el despligue):
 
 NodeJS (última versión)
 Angular 10
@@ -18,7 +18,7 @@ Las rutas de la api estan publicadas en POSTMAN: https://documenter.getpostman.c
 
 Frontend:
 En la cmd tipear "npm install" para instalar las dependencias de angular.
-Correr el comando "ng serve -0" para compiar el proyecto y levantar el cliente.
+Correr el comando "ng serve -o" para compiar el proyecto y levantar el cliente.
 
 DB:
 (El archivo de configuracion de la bd se encuentra en el proyecto backend en el archivo "environment.ts")
